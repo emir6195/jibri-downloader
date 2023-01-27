@@ -1,0 +1,1 @@
+docker build . -t emir6195/jibri-downloader-app

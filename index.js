@@ -2,7 +2,12 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-const dirname = '/Users/turkgen/.jitsi-meet-cfg/jibri/recordings/'
+
+
+// dirname example => '/Users/turkgen/.jitsi-meet-cfg/jibri/recordings/'
+const dirname = process.env.JIBRI_DOWNLOADER_DIRNAME;
+const port = process.env.JIBRI_DOWNLOADER_PORT
+const host = '0.0.0.0'
 
 app.get('/recordings/:recording_folder', (req, res) => {
     const video_folder = dirname + req.params.recording_folder;
@@ -26,4 +31,6 @@ app.get('/recordings/:recording_folder', (req, res) => {
 
 
 // serve
-app.listen(5010);
+app.listen(port, host, ()=>{
+    console.log('Jibri downloader server is started on port=>', port)
+});

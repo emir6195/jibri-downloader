@@ -1,0 +1,1 @@
+docker build --platform linux/amd64 -t emir6195/jibri-downloader-app .
