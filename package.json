@@ -1,0 +1,22 @@
+{
+  "name": "jibri-downloader-cbot",
+  "version": "1.0.0",
+  "description": "Download conference recordings of cbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emir6195/jibri-downloader.git"
+  },
+  "author": "Emir Şener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emir6195/jibri-downloader/issues"
+  },
+  "homepage": "https://github.com/emir6195/jibri-downloader#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
